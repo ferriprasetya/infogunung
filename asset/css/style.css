@@ -1,0 +1,201 @@
+:root {
+  --main-color: #f56753;
+  --sec-color: #f8f1f1;
+  --bg-color: #fdfdfd;
+  --main-text: #221b1a;
+  --sec-text: #817a7b;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color);
+}
+.title {
+  font-family: "Lora", serif;
+  color: var(--main-text);
+}
+.active {
+  color: var(--main-color) !important;
+}
+.main-txt {
+  color: var(--main-color) !important;
+}
+.sec-txt {
+  color: var(--sec-text) !important;
+}
+.disabled {
+  background-color: var(--sec-text);
+}
+/* navbar */
+nav {
+  z-index: 100;
+  background-color: var(--bg-color);
+}
+.navbar-brand {
+  font-size: 1.5rem;
+}
+.navbar-nav .nav-link {
+  font-weight: 400;
+}
+
+/* main */
+.main {
+  padding-top: 6rem;
+}
+.main .sub-title {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.main span {
+  color: var(--main-text);
+}
+.main img {
+  height: 32rem;
+}
+.main .title {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.search {
+  background-color: var(--sec-color);
+  border-radius: 20px;
+  box-shadow: 2px 3px 3px rgba(107, 39, 30, 0.1);
+}
+.search input {
+  border: none;
+  background-color: var(--sec-color);
+  border-radius: 20px;
+  font-weight: 300;
+}
+
+/* populer */
+.populer .card {
+  height: 21rem;
+  min-width: 15rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px 0 rgba(107, 39, 30, 0.1);
+}
+.populer .daftar {
+  overflow-x: auto;
+}
+.populer ::-webkit-scrollbar {
+  height: 10px;
+}
+.populer ::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+}
+
+.populer ::-webkit-scrollbar-thumb {
+  background-color: var(--sec-color);
+  border-radius: 5px;
+}
+.populer .card img {
+  border-radius: 10px;
+}
+.populer .card .card-subtitle {
+  font-size: 0.8rem;
+}
+.populer .card .btns a {
+  font-weight: 400;
+}
+.populer .card .detail {
+  background: rgb(250, 114, 96);
+  background: linear-gradient(
+    142deg,
+    rgba(250, 114, 96, 1) 29%,
+    rgba(209, 86, 69, 1) 100%
+  );
+  color: var(--sec-color);
+  border-radius: 10px;
+}
+.populer .card .detail:hover {
+  animation: btn-animation 0.5s ease-in-out;
+  background: rgba(209, 86, 69, 1);
+  color: var(--sec-color);
+}
+
+/* berita */
+.berita img {
+  height: 25rem;
+  border-radius: 15px;
+}
+.btn-lain {
+  background: rgb(250, 114, 96);
+  background: linear-gradient(
+    142deg,
+    rgba(250, 114, 96, 1) 29%,
+    rgba(209, 86, 69, 1) 100%
+  );
+  color: var(--sec-color);
+  border-radius: 10px;
+}
+.btn-lain:hover {
+  animation: btn-animation 0.5s ease-in-out;
+  background: rgba(209, 86, 69, 1);
+  color: var(--sec-color);
+}
+
+/* kutipan */
+.kutipan p {
+  font-size: 2rem;
+  margin: 8rem 0;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+/* footer */
+footer {
+  background: var(--sec-color);
+  padding: 2rem 0 5px 0;
+}
+footer * {
+  font-weight: 500;
+  color: var(--sec-text);
+}
+footer p {
+  margin: 0;
+}
+footer .brand {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+footer .goto:hover {
+  color: var(--main-color);
+}
+
+@media (max-width: 500px) {
+  .main img {
+    height: 250px;
+  }
+  .populer .card {
+    height: 20rem;
+    min-width: 14rem;
+    border-radius: 10px;
+  }
+}
+@keyframes btn-animation {
+  0% {
+    background: rgb(250, 114, 96);
+    background: linear-gradient(
+      142deg,
+      rgba(250, 114, 96, 1) 29%,
+      rgba(209, 86, 69, 1) 100%
+    );
+  }
+  50% {
+    background: rgb(250, 114, 96);
+    background: linear-gradient(
+      142deg,
+      rgba(250, 114, 96, 1) 50%,
+      rgba(209, 86, 69, 1) 50%
+    );
+  }
+  100% {
+    background: rgb(250, 114, 96);
+    background: linear-gradient(
+      142deg,
+      rgba(250, 114, 96, 1) 0%,
+      rgba(209, 86, 69, 1) 0%
+    );
+  }
+}
